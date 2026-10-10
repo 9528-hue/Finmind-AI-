@@ -1,0 +1,26 @@
+{
+  "anomaly_general": {
+    "version": "v20261009_094935",
+    "artifact_path": "C:\\Users\\utkar_dwxdiqe\\OneDrive\\Desktop\\finmind-ai(final)\\finmind-ai(ext) (2)\\finmind-ai(ext)\\backend\\app\\ml\\artifacts\\anomaly_general_v20261009_094935.joblib",
+    "trained_at": "2026-10-09T09:49:40.946353",
+    "metrics": {
+      "normal_recall": 0.95,
+      "anomaly_detection_rate_synthetic": 1.0,
+      "n_train_normal": 500,
+      "n_train_anomaly_ref": 50,
+      "contamination": 0.05,
+      "note": "Isolation Forest trained on synthetic normal transactions. Anomaly detection rate measured on synthetic anomalies \u2014 not confirmed fraud labels. Labels: suspicious/anomalous only."
+    },
+    "features": [
+      "log_amount",
+      "is_debit",
+      "is_weekend",
+      "hour",
+      "velocity_score",
+      "merchant_novelty",
+      "amount_ratio_vs_category_mean"
+    ],
+    "dataset_source": "synthetic_normal_n500 (app/ml/training/train_anomaly.py)",
+    "notes": "Isolation Forest general model; cold-start fallback; not fraud labels"
+  }
+}
